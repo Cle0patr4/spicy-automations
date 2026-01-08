@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Contact Us - Get Custom AI Automation Solutions | Spicy Automations</title>
+    <meta name="title" content="Contact Us - Get Custom AI Automation Solutions | Spicy Automations">
+    <meta name="description" content="Ready to automate your business? Contact Spicy Automations for a consultation. We build custom AI automations for sales, operations, and customer service. Get started today!">
+    <meta name="keywords" content="AI automation contact, AI automation consultation, custom automation quote, AI solutions inquiry, business automation contact">
+    <meta name="author" content="Spicy Automations">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://spicyautomations.com/contact.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spicyautomations.com/contact.html">
+    <meta property="og:title" content="Contact Us - Get Custom AI Automation Solutions | Spicy Automations">
+    <meta property="og:description" content="Ready to automate your business? Contact Spicy Automations for a consultation.">
+    <meta property="og:image" content="https://spicyautomations.com/assets/images/og-image.png">
+    <meta property="og:site_name" content="Spicy Automations">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://spicyautomations.com/contact.html">
+    <meta property="twitter:title" content="Contact Us - Get Custom AI Automation Solutions | Spicy Automations">
+    <meta property="twitter:description" content="Ready to automate your business? Contact Spicy Automations for a consultation.">
+    <meta property="twitter:image" content="https://spicyautomations.com/assets/images/og-image.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Spicy Automations",
+        "description": "Get in touch with Spicy Automations to discuss your AI automation needs. We build custom solutions for sales, operations, and customer service.",
+        "url": "https://spicyautomations.com/contact.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Spicy Automations",
+            "email": "ale@spicyautomations.com",
+            "url": "https://spicyautomations.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "ale@spicyautomations.com",
+                "contactType": "Sales",
+                "availableLanguage": ["English", "Spanish"]
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark" id="navbar-container"></nav>
+    <script src="assets/js/navbar.js"></script>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container-narrow">
+            <div class="contact-header">
+                <div class="tag-wrapper">
+                    <span class="elipse"></span>
+                    <div class="tag">ADD SOME SPICE TO YOUR OPERATIONS</div>
+                    <span class="elipse"></span>
+                </div>
+                <h1>Let's bring your vision to life</h1>
+            </div>
+
+            <form action="https://formspree.io/f/xykzrpvv" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employees">How many employees does your company have?</label>
+                    <select id="employees" name="employees">
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="1-10">1 a 10</option>
+                        <option value="10-50">de 10 a 50</option>
+                        <option value="50-100">de 50 a 100</option>
+                        <option value="100+">+100</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="automation">Tell us what you're thinking of automating.</label>
+                    <textarea id="automation" name="automation" rows="4" placeholder="e.g., payment reminders, email responses, quote generation, data entry..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="current-process">How do you currently handle this process and what tools do you use?</label>
+                    <textarea id="current-process" name="current-process" rows="4" placeholder="Describe your current workflow... manual, spreadsheets, etc."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="referral">Where did you hear about us?</label>
+                    <select id="referral" name="referral">
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Referral">Referral</option>
+                        <option value="Suggested by AI">Suggested by AI</option>
+                        <option value="Search Engines">Search Engines</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer-container"></footer>
+
+    <!-- Pre-fill form script -->
+    <script>
+        // Pre-fill automation field if product parameter is present
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const productTitle = params.get('product');
+
+            if (productTitle) {
+                const automationField = document.getElementById('automation');
+                automationField.value = `I'm interested in the product "${productTitle}" because... (please explain in which area and how you want to use this product)`;
+
+                // Scroll to the form
+                automationField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+    </script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

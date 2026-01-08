@@ -1,0 +1,13 @@
+/* TEAM */
+Developer & Designer: Alejandra Salgado
+Contact: ale [at] spicyautomations.com
+Location: USA
+
+/* SITE */
+Last update: 2026/01/08
+Standards: HTML5, CSS3, JavaScript ES6
+Components: AI Automation Solutions
+Software: Claude Code, VS Code
+
+/* THANKS */
+Built with passion for automation and AI innovation

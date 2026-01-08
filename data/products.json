@@ -1,0 +1,87 @@
+{
+  "sales": [
+    {
+      "title": "AI Voice Agent: Automated Phone Calls That Sound Human",
+      "shortDescription": "AI-powered phone agent that makes and receives calls 24/7. Handles appointments, customer service, and sales—with natural conversation and instant CRM updates.",
+      "longDescription": "<p>Our AI Voice Agent revolutionizes your phone operations by handling inbound and outbound calls with human-like conversation quality.</p><h2>Key Features</h2><ul><li><strong>24/7 Availability:</strong> Never miss a call, even outside business hours</li><li><strong>Natural Conversations:</strong> Human-like dialogue that customers trust</li><li><strong>CRM Integration:</strong> Automatically updates your customer database in real-time</li><li><strong>Multi-language Support:</strong> Communicate with customers in their preferred language</li></ul><h2>Perfect For</h2><ul><li>Appointment scheduling and reminders</li><li>Customer service inquiries</li><li>Lead qualification</li><li>Follow-up calls</li></ul><p>The system integrates seamlessly with your existing tools and learns from every interaction to improve over time. Perfect for businesses that need 24/7 phone coverage without the overhead of a large call center team.</p>"
+    },
+    {
+      "title": "Instant Quote Generator: From Inquiry to Proposal in Seconds",
+      "shortDescription": "Generate quotes instantly. AI analyzes customer requests, checks inventory/pricing, calculates costs, and delivers branded proposals.",
+      "longDescription": "Transform your quote generation process from hours to seconds. This automation receives customer requests through email, web forms, or chat, automatically analyzes the requirements, checks your inventory and pricing database, calculates accurate costs including margins, and generates professional branded proposals. It can handle complex pricing rules, volume discounts, and custom configurations. The system sends quotes directly to customers and logs everything in your CRM for follow-up."
+    },
+    {
+      "title": "AI Lead Qualification System",
+      "shortDescription": "Automatically qualify leads with smart forms, chatbots, or scoring—so you focus only on the best prospects.",
+      "longDescription": "Stop wasting time on unqualified leads. This system uses AI to score and qualify every lead that enters your pipeline based on customizable criteria like budget, timeline, authority, and need. It integrates with your forms, chatbots, and CRM to automatically route hot leads to your sales team while nurturing cold leads with automated follow-ups. The system learns from your closed deals to continuously improve lead scoring accuracy."
+    }
+  ],
+  "marketing": [
+    {
+      "title": "Automatic content creation and publishing",
+      "shortDescription": "Automate your content creation and publishing process using AI—fast, hands-free, and consistent across platforms.",
+      "longDescription": "Create and publish content across all your channels without manual work. This system generates blog posts, social media content, newsletters, and more based on your brand voice and topics. It can repurpose existing content, optimize for SEO, schedule posts across platforms, and even respond to trending topics in your industry. The AI maintains your brand consistency while saving your team dozens of hours per week."
+    },
+    {
+      "title": "Lead Generation with SEO",
+      "shortDescription": "Attract high-quality traffic with SEO-optimized pages designed to turn visitors into leads—automatically.",
+      "longDescription": "Build a lead generation machine with automated SEO-optimized landing pages. This system researches keywords, creates targeted content, optimizes on-page elements, and builds internal linking structures—all automatically. It generates location-specific pages, service pages, and blog content that ranks in search engines and converts visitors into qualified leads through smart forms and CTAs."
+    },
+    {
+      "title": "Lead Generation With Scrapping",
+      "shortDescription": "Scrape leads from online directories and platforms, and organize them to grow your pipeline faster.",
+      "longDescription": "Extract valuable lead data from public sources like business directories, LinkedIn, industry websites, and review platforms. The system automatically enriches the data with contact information, company details, and social profiles, then organizes everything into your CRM with proper segmentation. It respects rate limits and terms of service while building your prospecting list on autopilot."
+    }
+  ],
+  "customer-service": [
+    {
+      "title": "AI Voice Agent: Automated Phone Calls That Sound Human",
+      "shortDescription": "AI-powered phone agent that makes and receives calls 24/7. Handles appointments, customer service, and sales—with natural conversation and instant CRM updates.",
+      "longDescription": "Our AI Voice Agent revolutionizes your phone operations by handling inbound and outbound calls with human-like conversation quality. It can schedule appointments, answer customer questions, qualify leads, and update your CRM in real-time. The system integrates seamlessly with your existing tools and learns from every interaction to improve over time. Perfect for businesses that need 24/7 phone coverage without the overhead of a large call center team."
+    },
+    {
+      "title": "Email analyzer for responding to or updating the database",
+      "shortDescription": "AI-powered inbox automation: confirms payments, answers FAQs, updates databases, and routes complex cases to your team—all without manual work.",
+      "longDescription": "Your inbox becomes self-managing with this intelligent email automation. The AI reads incoming emails, categorizes them, and takes appropriate action: confirming payments, answering common questions with personalized responses, updating customer records in your database, creating support tickets, or escalating to human agents when needed. It handles multiple languages and learns your company's response style over time."
+    },
+    {
+      "title": "Automated Sales Assistant ChatBot",
+      "shortDescription": "This Chatbot offers instant info and 24/7 lead capture. It captures users data automating your sales pipeline.",
+      "longDescription": "Deploy an intelligent chatbot that never sleeps. This assistant engages website visitors, answers product questions, helps with navigation, captures lead information, and qualifies prospects—all while maintaining natural conversation. It integrates with your knowledge base, CRM, and calendar to provide accurate information and book meetings. The bot improves through machine learning and can seamlessly hand off to human agents when needed."
+    }
+  ],
+  "operations": [
+    {
+      "title": "AI Company Brain",
+      "shortDescription": "Centralize documentation, code, policies, and processes into one AI agent. Employees get instant, accurate answers 24/7.",
+      "longDescription": "Create a centralized knowledge hub that every employee can access through natural language. This AI agent indexes all your documentation, SOPs, code repositories, policies, and internal resources, then provides instant answers to employee questions. It can walk team members through processes, find relevant code examples, explain policies, and even suggest solutions based on past cases. It's like having your most knowledgeable employee available 24/7 to everyone."
+    },
+    {
+      "title": "AI Voice Agent: Automated Phone Calls That Sound Human",
+      "shortDescription": "AI-powered phone agent that makes and receives calls 24/7. Handles appointments, customer service, and sales.",
+      "longDescription": "Our AI Voice Agent revolutionizes your phone operations by handling inbound and outbound calls with human-like conversation quality. It can schedule appointments, answer customer questions, qualify leads, and update your CRM in real-time. The system integrates seamlessly with your existing tools and learns from every interaction to improve over time. Perfect for businesses that need 24/7 phone coverage without the overhead of a large call center team."
+    },
+    {
+      "title": "Automated Data Entry & Document Processing",
+      "shortDescription": "Extract data from invoices, forms, and documents automatically with AI—no more manual entry errors or wasted time.",
+      "longDescription": "Transform chaotic project management into streamlined operations. This Airtable-based system automatically creates project pipelines, generates task checklists based on project type, assigns responsibilities, sends reminders, tracks progress, and provides real-time dashboards for managers. It integrates with Slack, email, and calendar systems to keep everyone aligned. Projects move through stages automatically based on completion criteria."
+    }
+  ],
+  "management": [
+    {
+      "title": "AI Company Brain",
+      "shortDescription": "Centralize documentation, code, policies, and processes into one AI agent. Employees get instant, accurate answers 24/7.",
+      "longDescription": "Create a centralized knowledge hub that every employee can access through natural language. This AI agent indexes all your documentation, SOPs, code repositories, policies, and internal resources, then provides instant answers to employee questions. It can walk team members through processes, find relevant code examples, explain policies, and even suggest solutions based on past cases. It's like having your most knowledgeable employee available 24/7 to everyone."
+    },
+    {
+      "title": "Automated Reporting Dashboard",
+      "shortDescription": "Get real-time insights with automated dashboards. Track KPIs, performance metrics, and team productivity—all in one place.",
+      "longDescription": "Eliminate manual reporting with automated goal tracking. This system connects to all your data sources (CRM, analytics, databases) to automatically update OKRs and KPIs in real-time. It generates weekly reports, sends alerts when metrics are off track, creates visualizations for leadership meetings, and even suggests actions based on performance trends. Team members update their progress through simple forms or integrations."
+    },
+    {
+      "title": "AI-Powered Task Automation",
+      "shortDescription": "Automate repetitive tasks like data entry, email responses, and report generation. Let your team focus on strategic work.",
+      "longDescription": "Free your team from repetitive work with intelligent task automation. This system handles data entry, email responses, report generation, file organization, and routine administrative tasks. It learns your team's workflows and suggests additional automation opportunities. The AI adapts to changes in your processes and can handle exceptions intelligently, escalating to humans only when necessary."
+    }
+  ]
+}
