@@ -867,24 +867,55 @@ a {
         display: flex;
     }
 
+    /* Hero Section - Mobile Adjustments */
+    .hero {
+        height: 100vh;
+        min-height: 100vh;
+        justify-content: center;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .hero .container {
+        margin-top: 0;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 8vw, 48px);
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+        padding: 0 10px;
+    }
+
     .hero-bottom {
         flex-direction: column;
         gap: 30px;
         padding: 0 20px;
+        margin-left: 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
 
+    .hero-text {
+        text-align: center;
+    }
+
+    .btn-hero {
+        align-items: center;
+    }
+
+    /* Hide flames completely on mobile */
     .flames-container {
-        position: absolute;
-        width: 25%;
-        top: 0;  /* ← Cambiado de bottom a top */
-        height: 100%;  /* ← 100% para que cubra toda la altura del hero */
-        overflow: hidden;
-        z-index: -1;
-        pointer-events: none;
-    }
-
-    .flames-left {
-        opacity: 0.3;
+        display: none;
     }
 
     .tabs-nav {
