@@ -1,17 +1,4 @@
 // ===================================
-// MOBILE MENU TOGGLE
-// ===================================
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const navLinks = document.querySelector('.nav-links');
-
-if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        mobileMenuBtn.classList.toggle('active');
-    });
-}
-
-// ===================================
 // LOAD PRODUCTS FROM JSON
 // ===================================
 
@@ -52,10 +39,11 @@ async function loadProducts() {
                     data[category].forEach((product, index) => {
                         const productCard = document.createElement('div');
                         productCard.className = 'product-card';
+                        const timestamp = Date.now();
                         productCard.innerHTML = `
                             <h3>${product.title}</h3>
                             <p>${product.shortDescription}</p>
-                            <a href="products.html?category=${category}&index=${index}" class="btn-primary">LEARN MORE</a>
+                            <a href="products.html?category=${category}&index=${index}&v=${timestamp}" class="btn-primary">LEARN MORE</a>
                         `;
                         productsGrid.appendChild(productCard);
                     });
@@ -194,6 +182,34 @@ if (heroSection && flamesContainers.length > 0) {
             });
         }
     });
+}
+
+// ===================================
+// FLAMES ANIMATION ON FIRST LOAD
+// ===================================
+const flamesRight = document.querySelector('.flames-right');
+const flamesLeft = document.querySelector('.flames-left');
+
+if (flamesRight && flamesLeft) {
+    // Check if animation has already been shown
+    const hasFlamesAnimated = sessionStorage.getItem('flamesAnimated');
+
+    if (!hasFlamesAnimated) {
+        // Wait a bit for page to load, then animate
+        setTimeout(() => {
+            flamesRight.classList.add('animate-flames');
+            flamesLeft.classList.add('animate-flames');
+
+            // Mark as animated in session storage
+            sessionStorage.setItem('flamesAnimated', 'true');
+        }, 300);
+    } else {
+        // If already animated, show flames immediately
+        flamesRight.style.opacity = '1';
+        flamesRight.style.transform = 'translateY(0)';
+        flamesLeft.style.opacity = '1';
+        flamesLeft.style.transform = 'translateY(0)';
+    }
 }
 
 // ===================================

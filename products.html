@@ -41,6 +41,53 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/products.css">
 
+    <!-- Mobile Specific Styles -->
+    <style>
+        @media (max-width: 768px) {
+            .category-tabs {
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 8px !important;
+            }
+
+            .category-tabs .tab-btn {
+                padding: 10px 20px !important;
+                font-size: 14px !important;
+            }
+
+            #productsGrid {
+                display: flex !important;
+                flex-direction: row !important;
+                overflow-x: auto !important;
+                overflow-y: visible !important;
+                scroll-snap-type: x mandatory !important;
+                gap: 20px !important;
+                padding: 20px !important;
+                margin: 0 -20px !important;
+                -webkit-overflow-scrolling: touch !important;
+                scrollbar-width: none !important;
+                -ms-overflow-style: none !important;
+            }
+
+            #productsGrid::-webkit-scrollbar {
+                display: none !important;
+            }
+
+            #productsGrid .product-card {
+                min-width: 85% !important;
+                max-width: 85% !important;
+                scroll-snap-align: center !important;
+                flex-shrink: 0 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                transition: all 0.3s ease !important;
+            }
+
+            /* Removed !important to allow JS to control gradual transitions */
+        }
+    </style>
+
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
@@ -147,6 +194,51 @@
     <nav class="navbar navbar-dark" id="navbar-container"></nav>
     <script src="assets/js/navbar.js"></script>
 
+    <!-- Mobile Menu Script - Direct -->
+    <script>
+    // Direct mobile menu handler with inline styles
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            const btn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('navLinks');
+
+            if (btn && nav) {
+                // Set initial styles - proper mobile menu
+                nav.style.cssText = 'display: none; position: fixed; top: 80px; left: 0; right: 0; background: #2C160D; flex-direction: column; padding: 20px; z-index: 999; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);';
+
+                const links = nav.querySelectorAll('a');
+                links.forEach(function(link) {
+                    link.style.cssText = 'color: #DED0C2; font-size: 16px; font-weight: 500; padding: 15px; margin: 5px 0; text-align: left; display: block; transition: opacity 0.3s ease;';
+                });
+
+                const toggleMenu = function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    if (nav.style.display === 'none' || nav.style.display === '') {
+                        nav.style.display = 'flex';
+                        btn.classList.add('active');
+                    } else {
+                        nav.style.display = 'none';
+                        btn.classList.remove('active');
+                    }
+                };
+
+                btn.addEventListener('click', toggleMenu);
+                btn.addEventListener('touchstart', toggleMenu);
+
+                // Close menu when clicking a link
+                links.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        nav.style.display = 'none';
+                        btn.classList.remove('active');
+                    });
+                });
+            }
+        }, 1000);
+    });
+    </script>
+
     <!-- Products Section -->
     <section class="products-page">
         <div class="container">
@@ -197,7 +289,7 @@
     <footer class="footer" id="footer-container"></footer>
 
     <!-- Products Page JS -->
-    <script src="assets/js/products-page.js"></script>
+    <script src="assets/js/products-page.js?v=1736559200"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
