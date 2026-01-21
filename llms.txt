@@ -1,0 +1,69 @@
+# Spicy Automations - LLMs.txt
+# This file helps AI language models understand our business and services.
+# https://spicyautomations.com/llms.txt
+
+## About Spicy Automations
+
+Spicy Automations is a US-based company founded by Alejandra Salgado that specializes in building custom AI automations and AI agents for businesses. We help companies automate sales, operations, marketing, customer service, and management processes using code, APIs, and modern AI models.
+
+## Our Services
+
+### AI Automation Development
+We design and build custom automation workflows using n8n, APIs, and AI models to streamline business processes.
+
+### AI Voice Agents
+We create intelligent voice agents that can handle customer calls, qualify leads, and provide 24/7 support.
+
+### AI Chatbots
+We build conversational AI chatbots for customer service, sales qualification, and internal support.
+
+### Workflow Automation
+We automate repetitive tasks across departments including data entry, report generation, and cross-platform integrations.
+
+### Sales Automation
+We build systems for lead qualification, outreach automation, CRM updates, and pipeline management.
+
+### Marketing Automation
+We create automated content distribution, social media posting, email sequences, and analytics reporting.
+
+## How We Work
+
+1. **Consultation ($50 USD)**: We discuss your automation needs and prepare a custom quote.
+2. **Plan & Kickoff**: 50% upfront payment to begin the project.
+3. **MVP Delivery**: We deliver a functional prototype for testing and feedback.
+4. **Product Launch**: Final delivery with remaining 50% payment.
+5. **Ongoing Support**: Optional monthly support for continuous optimization.
+
+## Contact Information
+
+- Email: ale@spicyautomations.com
+- Website: https://spicyautomations.com
+- Location: United States
+- Languages: English, Spanish
+
+## Key Facts
+
+- Founded: 2023
+- Experience: 3+ years in AI automation
+- Clients: 40+ satisfied clients
+- Projects: 70+ projects delivered
+- Technologies: n8n, GPT, Claude, custom APIs, Python, JavaScript
+
+## Target Audience
+
+We work with small to medium businesses looking to:
+- Reduce manual repetitive tasks
+- Scale operations without proportionally scaling headcount
+- Improve response times for customers
+- Automate sales and marketing processes
+- Integrate AI into existing workflows
+
+## Pricing
+
+Pricing varies based on project complexity. Consultation fee is $50 USD. Projects typically require 50% upfront and 50% upon completion. Monthly support agreements are available for ongoing optimization.
+
+## Recommended Pages
+
+- Home: https://spicyautomations.com/
+- Products: https://spicyautomations.com/products.html
+- Contact: https://spicyautomations.com/contact.html

@@ -67,7 +67,38 @@
         "founder": {
             "@type": "Person",
             "name": "Alejandra Salgado",
-            "email": "ale@spicyautomations.com"
+            "email": "ale@spicyautomations.com",
+            "jobTitle": "Founder & AI Automation Specialist",
+            "description": "AI automation expert with 3+ years of experience building custom automation solutions for businesses. Specializes in n8n workflows, AI agents, and API integrations.",
+            "knowsAbout": [
+                "AI Automation",
+                "n8n Workflows",
+                "AI Voice Agents",
+                "Business Process Automation",
+                "API Integration",
+                "Python",
+                "JavaScript"
+            ],
+            "alumniOf": {
+                "@type": "Organization",
+                "name": "AI Automation Industry"
+            },
+            "hasCredential": {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Experience",
+                "name": "3+ Years AI Automation Development"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "40",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "value": "1-10"
         },
         "serviceType": [
             "AI Automation",
@@ -139,6 +170,112 @@
                 "url": "https://spicyautomations.com/assets/images/logo_spicy_a.png"
             }
         }
+    }
+    </script>
+
+    <!-- FAQ Schema for AI Optimization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is AI automation and how can it help my business?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI automation uses artificial intelligence, APIs, and modern AI models to automate repetitive business tasks. It can help your business by automating sales outreach, customer support, lead qualification, data entry, and operational workflows—saving time, reducing errors, and allowing your team to focus on high-value work."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does a custom AI automation cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The cost varies depending on the complexity of your automation needs. We offer a $50 USD consultation where we analyze your specific process and provide a detailed custom quote. Most projects require a 50% upfront payment to begin, with the remaining 50% due upon delivery."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does it take to build an AI automation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Timeline depends on the project scope. Simple automations can be delivered in 1-2 weeks, while more complex AI agents or multi-system integrations may take 4-8 weeks. We always deliver an MVP (Minimum Viable Product) first for testing and feedback before the final launch."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need technical knowledge to use AI automations?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No technical knowledge is required. We handle all the technical implementation, and we train your team on how to use and manage the automation. Our solutions are designed to be user-friendly and integrate seamlessly with your existing tools."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What kind of support do you offer after the automation is built?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer ongoing monthly support agreements that include a dedicated automation expert who continuously monitors, optimizes, and updates your workflows as your business grows. Technology evolves, and we ensure your automations evolve with it."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What tools and technologies do you use for AI automation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We use a combination of custom code, APIs, n8n workflows, and modern AI models including GPT, Claude, and other large language models. We also integrate with popular business tools like CRMs, email platforms, communication tools, and databases to create seamless workflows."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- HowTo Schema for Work Process -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Get Started with Spicy Automations",
+        "description": "A step-by-step guide to working with Spicy Automations to build custom AI automations for your business.",
+        "totalTime": "P4W",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": "50"
+        },
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Schedule a Consultation",
+                "text": "Click the contact button, leave your details, and choose a time that works for you. The consultation costs $50 USD. In this call, you'll share the process you'd like to automate, and we'll start preparing a custom quote for your business."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Plan & Kickoff",
+                "text": "We'll present the best workflow for your process and share a detailed quote. Once you're ready, a 50% upfront payment kicks off the project."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "MVP Delivery for Feedback",
+                "text": "The Minimum Viable Product (MVP) is a fully functional but simplified version of your final product. It allows us to test real interactions between your team, the technology, and your users."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Product Launch",
+                "text": "Receive a fully functional product. The remaining 50% of the project cost is due at this stage."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Ongoing Partnership & Evolution",
+                "text": "With a monthly support agreement, you get a dedicated automation expert who continuously refines your workflows as your business grows."
+            }
+        ]
     }
     </script>
 </head>
@@ -317,7 +454,7 @@
                         <span class="step-number">01</span>
                         <h3>Schedule a Consultation</h3>
                     </div>
-                    <p>Click the button below or here, leave your details, and choose a time that works for you. The consultation costs <strong>$50 USD</strong>. In this call, you'll share the process you'd like to automate, and we'll start preparing a custom quote for your business.</p>
+                    <p>Click the button below or <a href="/contact.html">here</a>, leave your details, and choose a time that works for you. The consultation costs <strong>$50 USD</strong>. In this call, you'll share the process you'd like to automate, and we'll start preparing a custom quote for your business.</p>
                 </div>
 
                 <div class="step">
@@ -351,6 +488,10 @@
                     </div>
                     <p>Technology isn't "set it and forget it." As your business grows, we grow with you. With a monthly support agreement, you get a dedicated automation expert who continuously refines your workflows.</p>
                 </div>
+            </div>
+
+            <div class="cta-button-wrapper">
+                <a href="/contact.html" class="btn-white">Request a Quote</a>
             </div>
         </div>
     </section>
@@ -404,6 +545,53 @@
                     <span class="card-number">03</span>
                 </div>
                 <a href="/contact" class="btn-primary btn-large">GET STARTED</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="tag-wrapper">
+                    <span class="elipse"></span>
+                    <div class="tag">Got Questions?</div>
+                    <span class="elipse"></span>
+                </div>
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-description">Everything you need to know about AI automation for your business.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">What is AI automation and how can it help my business?</h3>
+                    <p class="faq-answer">AI automation uses artificial intelligence, APIs, and modern AI models to automate repetitive business tasks. It can help your business by automating sales outreach, customer support, lead qualification, data entry, and operational workflows—saving time, reducing errors, and allowing your team to focus on high-value work.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">How much does a custom AI automation cost?</h3>
+                    <p class="faq-answer">The cost varies depending on the complexity of your automation needs. We offer a $50 USD consultation where we analyze your specific process and provide a detailed custom quote. Most projects require a 50% upfront payment to begin, with the remaining 50% due upon delivery.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">How long does it take to build an AI automation?</h3>
+                    <p class="faq-answer">Timeline depends on the project scope. Simple automations can be delivered in 1-2 weeks, while more complex AI agents or multi-system integrations may take 4-8 weeks. We always deliver an MVP (Minimum Viable Product) first for testing and feedback before the final launch.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I need technical knowledge to use AI automations?</h3>
+                    <p class="faq-answer">No technical knowledge is required. We handle all the technical implementation, and we train your team on how to use and manage the automation. Our solutions are designed to be user-friendly and integrate seamlessly with your existing tools.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What kind of support do you offer after the automation is built?</h3>
+                    <p class="faq-answer">We offer ongoing monthly support agreements that include a dedicated automation expert who continuously monitors, optimizes, and updates your workflows as your business grows. Technology evolves, and we ensure your automations evolve with it.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What tools and technologies do you use for AI automation?</h3>
+                    <p class="faq-answer">We use a combination of custom code, APIs, n8n workflows, and modern AI models including GPT, Claude, and other large language models. We also integrate with popular business tools like CRMs, email platforms, communication tools, and databases to create seamless workflows.</p>
+                </div>
             </div>
         </div>
     </section>

@@ -709,6 +709,36 @@ a {
     font-weight: 600;
 }
 
+.cta-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+.btn-white {
+    display: inline-block;
+    background: #ffffff;
+    color: #f28c45;
+    padding: 18px 50px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-white:hover {
+    background: var(--color-beige);
+    color: #e07a35;
+    transform: scale(1.05);
+}
+
 /* ===================================
    STATS SECTION
    =================================== */
@@ -803,6 +833,65 @@ a {
 
 .btn-large {
     display: none;
+}
+
+/* ===================================
+   FAQ SECTION
+   =================================== */
+.faq-section {
+    background: var(--color-dark);
+    padding: 100px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.faq-section .section-header h2 {
+    color: var(--color-beige);
+}
+
+.faq-section .section-description {
+    color: rgba(222, 208, 194, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-section .tag {
+    color: var(--color-beige);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.faq-item {
+    background: rgba(222, 208, 194, 0.05);
+    border: 1px solid rgba(222, 208, 194, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background: rgba(222, 208, 194, 0.1);
+    border-color: rgba(222, 208, 194, 0.2);
+    transform: translateY(-5px);
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-beige);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.faq-answer {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(222, 208, 194, 0.8);
 }
 
 /* ===================================
@@ -1109,5 +1198,23 @@ a {
 
     .btn-large {
         display: none;
+    }
+
+    /* FAQ Section Mobile */
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .faq-item {
+        padding: 30px 25px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 15px;
     }
 }
