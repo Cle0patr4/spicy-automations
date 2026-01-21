@@ -196,31 +196,50 @@
 
     <!-- Mobile Menu Script - Direct -->
     <script>
-    // Direct mobile menu handler with inline styles
+    // Direct mobile menu handler with inline styles - ONLY for mobile
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             const btn = document.getElementById('mobileMenuBtn');
             const nav = document.getElementById('navLinks');
 
             if (btn && nav) {
-                // Set initial styles - proper mobile menu
-                nav.style.cssText = 'display: none; position: fixed; top: 80px; left: 0; right: 0; background: #2C160D; flex-direction: column; padding: 20px; z-index: 999; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);';
+                // Only apply mobile styles if screen is mobile size
+                function applyMobileStyles() {
+                    if (window.innerWidth <= 768) {
+                        nav.style.cssText = 'display: none; position: fixed; top: 80px; left: 0; right: 0; background: #2C160D; flex-direction: column; padding: 20px; z-index: 999; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);';
 
-                const links = nav.querySelectorAll('a');
-                links.forEach(function(link) {
-                    link.style.cssText = 'color: #DED0C2; font-size: 16px; font-weight: 500; padding: 15px; margin: 5px 0; text-align: left; display: block; transition: opacity 0.3s ease;';
-                });
+                        const links = nav.querySelectorAll('a');
+                        links.forEach(function(link) {
+                            link.style.cssText = 'color: #DED0C2; font-size: 16px; font-weight: 500; padding: 15px; margin: 5px 0; text-align: left; display: block; transition: opacity 0.3s ease;';
+                        });
+                    } else {
+                        // Reset styles for desktop
+                        nav.style.cssText = '';
+                        const links = nav.querySelectorAll('a');
+                        links.forEach(function(link) {
+                            link.style.cssText = '';
+                        });
+                    }
+                }
+
+                // Apply on load
+                applyMobileStyles();
+
+                // Reapply on resize
+                window.addEventListener('resize', applyMobileStyles);
 
                 const toggleMenu = function(e) {
                     e.preventDefault();
                     e.stopPropagation();
 
-                    if (nav.style.display === 'none' || nav.style.display === '') {
-                        nav.style.display = 'flex';
-                        btn.classList.add('active');
-                    } else {
-                        nav.style.display = 'none';
-                        btn.classList.remove('active');
+                    if (window.innerWidth <= 768) {
+                        if (nav.style.display === 'none' || nav.style.display === '') {
+                            nav.style.display = 'flex';
+                            btn.classList.add('active');
+                        } else {
+                            nav.style.display = 'none';
+                            btn.classList.remove('active');
+                        }
                     }
                 };
 
@@ -228,10 +247,13 @@
                 btn.addEventListener('touchstart', toggleMenu);
 
                 // Close menu when clicking a link
+                const links = nav.querySelectorAll('a');
                 links.forEach(function(link) {
                     link.addEventListener('click', function() {
-                        nav.style.display = 'none';
-                        btn.classList.remove('active');
+                        if (window.innerWidth <= 768) {
+                            nav.style.display = 'none';
+                            btn.classList.remove('active');
+                        }
                     });
                 });
             }
