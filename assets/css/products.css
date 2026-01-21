@@ -237,6 +237,26 @@
     display: block;
 }
 
+.detail-content .description-detail .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 30px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(44, 22, 13, 0.1);
+}
+
+.detail-content .description-detail .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 12px;
+}
+
 .detail-content .description-detail blockquote {
     border-left: 4px solid #f28c45;
     padding-left: 20px;

@@ -36,7 +36,8 @@ async function loadProducts() {
                 if (productsGrid) {
                     productsGrid.innerHTML = ''; // Clear existing content
 
-                    data[category].forEach((product, index) => {
+                    // Limit to 3 products per category on home page
+                    data[category].slice(0, 3).forEach((product, index) => {
                         const productCard = document.createElement('div');
                         productCard.className = 'product-card';
                         const timestamp = Date.now();
