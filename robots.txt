@@ -1,0 +1,22 @@
+# robots.txt for Spicy Automations
+# https://spicyautomations.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow sensitive or backend files
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /data/
+
+# Allow CSS and JS for rendering (Google best practice)
+Allow: /assets/css/style.css
+Allow: /assets/css/contact.css
+Allow: /assets/css/products.css
+Allow: /assets/js/main.js
+
+# Crawl-delay (optional, only if you have server load issues)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://spicyautomations.com/sitemap.xml
