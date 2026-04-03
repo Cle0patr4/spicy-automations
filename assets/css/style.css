@@ -80,7 +80,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -180,8 +180,8 @@ a {
 .flames-container {
     position: fixed;
     width: 25%;
+    max-width: 400px;
     bottom: 0;
-    height: 100vh;
     overflow: hidden;
     z-index: 0;
     pointer-events: none;
@@ -218,13 +218,21 @@ a {
 }
 
 .flames-container video {
-    width: auto;
-    height: 45vh;
+    width: 100%;
+    height: auto;
     display: block;
     opacity: 0.6;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: relative;
+    pointer-events: none;
+}
+
+.flames-container video::-webkit-media-controls {
+    display: none !important;
+}
+
+.flames-container video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
     object-fit: contain;
 }
 
@@ -236,7 +244,7 @@ a {
 .gradient-overlay {
     position: absolute;
     width: 100%;
-    height: 45vh;
+    height: 100%;
     bottom: 0;
     left: 0;
     z-index: 1;
@@ -245,24 +253,28 @@ a {
 
 /* Gradiente radial específico para la derecha */
 .flames-right .gradient-overlay {
-    background: radial-gradient(
-        ellipse at bottom right,  /* ← Cambiado de circle a ellipse para más control */
-        transparent 0%,
-        transparent 25%,
-        rgba(44, 23, 13, 0.2) 30%,
-        rgba(44, 23, 13, 1) 70%  /* ← Termina antes */
-    );
+    background:
+        linear-gradient(to bottom, rgba(44, 22, 13, 1) 0%, transparent 50%),
+        radial-gradient(
+            ellipse at bottom right,
+            transparent 0%,
+            transparent 25%,
+            rgba(44, 22, 13, 0.2) 30%,
+            rgba(44, 22, 13, 1) 70%
+        );
 }
 
 /* Gradiente radial específico para la izquierda */
 .flames-left .gradient-overlay {
-    background: radial-gradient(
-        ellipse at bottom left,
-        transparent 0%,
-        transparent 25%,
-        rgba(44, 23, 13, 0.2) 30%,
-        rgba(44, 23, 13, 1) 70%
-    );
+    background:
+        linear-gradient(to bottom, rgba(44, 22, 13, 1) 0%, transparent 50%),
+        radial-gradient(
+            ellipse at bottom left,
+            transparent 0%,
+            transparent 25%,
+            rgba(44, 22, 13, 0.2) 30%,
+            rgba(44, 22, 13, 1) 70%
+        );
 }
 
 .hero-content {
@@ -300,9 +312,9 @@ a {
 }
 
 .hero h1 {
-    font-size: clamp(36px, 6vw, 80px);
+    font-size: clamp(32px, 5vw, 64px);
     line-height: 1.1;
-    font-weight: 400;  /* ← Cambiado de 700 a 400 (regular) */
+    font-weight: 400;
     margin-bottom: 20px;
     max-width: 1000px;
     margin-left: auto;
@@ -413,7 +425,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     opacity: 0.2;
     z-index: 5;
 }
@@ -429,7 +441,7 @@ a {
 }
 
 .bento-section .container {
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .bento-section .section-header {
@@ -683,7 +695,7 @@ a {
 .bento-shapes-positioned {
     position: absolute;
     bottom: 31px;
-    right: -40px;
+    right: -20px;
     width: 100%;
     height: 80%;
     pointer-events: none;
@@ -870,7 +882,7 @@ a {
     }
 
     .bento-large {
-        min-height: 280px;
+        min-height: auto;
     }
 }
 
@@ -1090,7 +1102,7 @@ a {
 .cta-section .container {
     position: relative;
     z-index: 1;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .cta-header {
@@ -1398,7 +1410,7 @@ a {
 }
 
 .stats-section .container {
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .stats-section .section-header h2 {
@@ -1830,37 +1842,35 @@ a {
     /* Flames smaller for mobile */
     .flames-container {
         width: 45%;
-        height: 25vh;
     }
 
     .flames-container video {
-        height: 18vh;
         opacity: 0.6;
-    }
-
-    .gradient-overlay {
-        height: 18vh;
     }
 
     /* Ajustar gradientes específicos para móvil */
     .flames-right .gradient-overlay {
-        background: radial-gradient(
-            ellipse at bottom right,
-            transparent 0%,
-            transparent 15%,
-            rgba(44, 23, 13, 0.3) 25%,
-            rgba(44, 23, 13, 1) 60%
-        ) !important;
+        background:
+            linear-gradient(to bottom, rgba(44, 22, 13, 1) 0%, transparent 50%),
+            radial-gradient(
+                ellipse at bottom right,
+                transparent 0%,
+                transparent 15%,
+                rgba(44, 22, 13, 0.3) 25%,
+                rgba(44, 22, 13, 1) 60%
+            ) !important;
     }
 
     .flames-left .gradient-overlay {
-        background: radial-gradient(
-            ellipse at bottom left,
-            transparent 0%,
-            transparent 15%,
-            rgba(44, 23, 13, 0.3) 25%,
-            rgba(44, 23, 13, 1) 60%
-        ) !important;
+        background:
+            linear-gradient(to bottom, rgba(44, 22, 13, 1) 0%, transparent 50%),
+            radial-gradient(
+                ellipse at bottom left,
+                transparent 0%,
+                transparent 15%,
+                rgba(44, 22, 13, 0.3) 25%,
+                rgba(44, 22, 13, 1) 60%
+            ) !important;
     }
 
     .tabs-nav {
@@ -2026,15 +2036,17 @@ a {
         right: auto !important;
         bottom: auto !important;
         width: 100% !important;
-        height: auto !important;
+        height: 160px !important;
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        align-items: center;
+        margin: 0;
+        overflow: hidden;
     }
 
     .hex-animation svg {
-        width: 200px !important;
-        height: 200px !important;
+        width: 400px !important;
+        height: 280px !important;
     }
 
     .bento-card .bento-shapes-positioned {

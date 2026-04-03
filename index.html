@@ -356,14 +356,14 @@
         <!-- Video backgrounds -->
 <div class="flames-container flames-right">
     <div class="gradient-overlay"></div>
-    <video autoplay loop muted playsinline aria-label="Animated flames background decoration on the right side">
+    <video autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Animated flames background decoration on the right side">
         <source src="assets/images/flames-right.mp4" type="video/mp4">
         <p>Your browser does not support HTML5 video. Animated flames background for visual effect.</p>
     </video>
 </div>
 <div class="flames-container flames-left">
     <div class="gradient-overlay"></div>
-    <video autoplay loop muted playsinline aria-label="Animated flames background decoration on the left side">
+    <video autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Animated flames background decoration on the left side">
         <source src="assets/images/flames-left.mp4" type="video/mp4">
         <p>Your browser does not support HTML5 video. Animated flames background for visual effect.</p>
     </video>
@@ -1018,6 +1018,16 @@
 
         updateUI();
     })();
+    </script>
+
+    <!-- Force autoplay on mobile -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.flames-container video').forEach(function(v) {
+            v.muted = true;
+            v.play().catch(function() {});
+        });
+    });
     </script>
 
     <!-- Main JS -->
