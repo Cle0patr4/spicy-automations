@@ -45,8 +45,6 @@ We create automated content distribution, social media posting, email sequences,
 
 - Founded: 2023
 - Experience: 3+ years in AI automation
-- Clients: 40+ satisfied clients
-- Projects: 70+ projects delivered
 - Technologies: n8n, GPT, Claude, custom APIs, Python, JavaScript
 
 ## Target Audience
