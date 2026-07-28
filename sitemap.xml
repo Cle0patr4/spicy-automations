@@ -26,4 +26,12 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- AI Voice Cost Calculator Landing -->
+    <url>
+        <loc>https://spicyautomations.com/ai-voice-cost-calculator/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>

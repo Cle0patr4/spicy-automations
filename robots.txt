@@ -13,6 +13,7 @@ Disallow: /data/
 Allow: /assets/css/style.css
 Allow: /assets/css/contact.css
 Allow: /assets/css/products.css
+Allow: /assets/css/landing-calculator.css
 Allow: /assets/js/main.js
 
 # Crawl-delay (optional, only if you have server load issues)

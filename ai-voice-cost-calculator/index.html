@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>AI Voice Call Cost Calculator for Debt Collection Agencies | Spicy Automations</title>
+    <meta name="title" content="AI Voice Call Cost Calculator for Debt Collection Agencies | Spicy Automations">
+    <meta name="description" content="Telephony, voice platform, LLM, credits — the real cost of an AI voice call is buried across four bills. Tell us your setup and we'll send you the true cost per answered minute, per voicemail, and per ring.">
+    <meta name="author" content="Spicy Automations">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://spicyautomations.com/ai-voice-cost-calculator/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spicyautomations.com/ai-voice-cost-calculator/">
+    <meta property="og:title" content="What does one AI voice call actually cost you?">
+    <meta property="og:description" content="Built for debt collection agencies. Get your true cost per answered minute, per voicemail, and per ring — within 24 hours.">
+    <meta property="og:image" content="https://spicyautomations.com/assets/images/og-image-calculator.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="What does one AI voice call actually cost you? Telephony + voice platform + LLM + credits — Spicy Automations">
+    <meta property="og:site_name" content="Spicy Automations">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://spicyautomations.com/ai-voice-cost-calculator/">
+    <meta property="twitter:title" content="What does one AI voice call actually cost you?">
+    <meta property="twitter:description" content="Built for debt collection agencies. Get your true cost per answered minute, per voicemail, and per ring — within 24 hours.">
+    <meta property="twitter:image" content="https://spicyautomations.com/assets/images/og-image-calculator.png">
+    <meta property="twitter:image:alt" content="What does one AI voice call actually cost you? Telephony + voice platform + LLM + credits — Spicy Automations">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2c160d">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/landing-calculator.css">
+
+    <!-- Meta Pixel — PageView here, Lead on successful submit (see script at end of body) -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '440639400009462');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=440639400009462&ev=PageView&noscript=1" alt=""></noscript>
+</head>
+<body class="landing-body">
+
+    <main class="landing">
+        <div class="landing-inner">
+
+            <!-- Logo only — no navigation, this is a conversion page -->
+            <header class="landing-header">
+                <img src="../assets/images/logo_spicy_a.png" alt="Spicy Automations" class="landing-logo">
+            </header>
+
+            <div class="landing-intro">
+                <div class="tag-wrapper">
+                    <span class="elipse"></span>
+                    <div class="tag">For Debt Collection Agencies</div>
+                    <span class="elipse"></span>
+                </div>
+
+                <h1>What does one AI voice call actually cost you?</h1>
+
+                <p class="landing-sub">Telephony, voice platform, LLM, credits — the real number is buried across four different bills. Tell us your setup and we'll send you the true cost per answered minute, per voicemail, and per ring.</p>
+            </div>
+
+            <!-- Posts to the "AI Voice Cost Calculator" form in Formspree.
+                 The notification email lives in the Formspree dashboard,
+                 not here. -->
+            <form action="https://formspree.io/f/mnjewryy" method="POST" class="landing-form" id="calculatorForm">
+
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" placeholder="Jane Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Work email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@agency.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company name</label>
+                    <input type="text" id="company" name="company" autocomplete="organization" placeholder="Your agency" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="monthly_call_volume">Monthly outbound call volume</label>
+                    <select id="monthly_call_volume" name="monthly_call_volume" required>
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="Under 10k">Under 10k</option>
+                        <option value="10k-50k">10k &ndash; 50k</option>
+                        <option value="50k-200k">50k &ndash; 200k</option>
+                        <option value="200k+">200k+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="voice_ai_platform">Current voice AI platform</label>
+                    <select id="voice_ai_platform" name="voice_ai_platform" data-reveals="voice_ai_platform_other_group" required>
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="ElevenLabs">ElevenLabs</option>
+                        <option value="Retell">Retell</option>
+                        <option value="Skit.ai">Skit.ai</option>
+                        <option value="LiveKit">LiveKit</option>
+                        <option value="Vapi">Vapi</option>
+                        <option value="Other">Other</option>
+                        <option value="Not using one yet">Not using one yet</option>
+                    </select>
+                </div>
+
+                <div class="form-group conditional-group" id="voice_ai_platform_other_group">
+                    <label for="voice_ai_platform_other">Which platform?</label>
+                    <input type="text" id="voice_ai_platform_other" name="voice_ai_platform_other" placeholder="Tell us which one">
+                </div>
+
+                <div class="form-group">
+                    <label for="dialer_platform">Contact center / dialer platform</label>
+                    <select id="dialer_platform" name="dialer_platform" data-reveals="dialer_platform_other_group" required>
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="TCN">TCN</option>
+                        <option value="LiveVox">LiveVox</option>
+                        <option value="Convoso">Convoso</option>
+                        <option value="Five9">Five9</option>
+                        <option value="Genesys">Genesys</option>
+                        <option value="Noble Systems">Noble Systems</option>
+                        <option value="In-house or custom">In-house or custom</option>
+                        <option value="Other">Other</option>
+                        <option value="Not sure">Not sure</option>
+                    </select>
+                </div>
+
+                <div class="form-group conditional-group" id="dialer_platform_other_group">
+                    <label for="dialer_platform_other">Which platform?</label>
+                    <input type="text" id="dialer_platform_other" name="dialer_platform_other" placeholder="Tell us which one">
+                </div>
+
+                <div class="form-group">
+                    <label for="telephony_minutes">Telephony minutes (carrier)</label>
+                    <p class="field-hint" id="telephony_minutes_hint">Are they bundled into your dialer platform, or billed by a separate carrier?</p>
+                    <select id="telephony_minutes" name="telephony_minutes" aria-describedby="telephony_minutes_hint" data-reveals="telephony_minutes_other_group" required>
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="Bundled into the platform">Bundled into the platform</option>
+                        <option value="Twilio">Twilio</option>
+                        <option value="Telnyx">Telnyx</option>
+                        <option value="Vonage">Vonage</option>
+                        <option value="Other">Other</option>
+                        <option value="Not sure">Not sure</option>
+                    </select>
+                </div>
+
+                <div class="form-group conditional-group" id="telephony_minutes_other_group">
+                    <label for="telephony_minutes_other">Which carrier?</label>
+                    <input type="text" id="telephony_minutes_other" name="telephony_minutes_other" placeholder="Tell us which one">
+                </div>
+
+                <div class="form-group">
+                    <label for="preferred_llm">Do you have a preferred LLM?</label>
+                    <select id="preferred_llm" name="preferred_llm" data-reveals="preferred_llm_other_group" required>
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="No preference">No preference</option>
+                        <option value="OpenAI (GPT)">OpenAI (GPT)</option>
+                        <option value="Claude (Anthropic)">Claude (Anthropic)</option>
+                        <option value="Gemini (Google)">Gemini (Google)</option>
+                        <option value="Llama (Meta)">Llama (Meta)</option>
+                        <option value="Mistral">Mistral</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group conditional-group" id="preferred_llm_other_group">
+                    <label for="preferred_llm_other">Which model?</label>
+                    <input type="text" id="preferred_llm_other" name="preferred_llm_other" placeholder="Tell us which one">
+                </div>
+
+                <!-- Campaign attribution — filled in by JS from the URL -->
+                <input type="hidden" name="utm_source" id="utm_source">
+                <input type="hidden" name="utm_medium" id="utm_medium">
+                <input type="hidden" name="utm_campaign" id="utm_campaign">
+                <input type="hidden" name="utm_content" id="utm_content">
+                <input type="hidden" name="utm_term" id="utm_term">
+                <input type="hidden" name="fbclid" id="fbclid">
+                <input type="hidden" name="referrer" id="referrer">
+                <input type="hidden" name="landing_url" id="landing_url">
+                <input type="hidden" name="_subject" id="formSubject" value="AI Voice Cost Calculator — new request">
+
+                <!-- Formspree honeypot: real users never see or fill this -->
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
+
+                <button type="submit" class="btn-landing-submit" id="submitBtn">Send me my cost breakdown</button>
+
+                <p class="form-fineprint">You'll receive your breakdown within 24 hours. Rates verified against current provider pricing at time of analysis.</p>
+            </form>
+
+            <!-- Confirmation shown in place of the form -->
+            <div class="landing-success" id="successPanel" role="status" aria-live="polite">
+                <div class="success-check" aria-hidden="true">&#10003;</div>
+                <h2>Got it. We'll send your cost breakdown within 24 hours.</h2>
+                <p>Keep an eye on the inbox you gave us — if it hasn't landed, check your spam folder.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+    (function() {
+        var form = document.getElementById('calculatorForm');
+        var submitBtn = document.getElementById('submitBtn');
+        var successPanel = document.getElementById('successPanel');
+        var params = new URLSearchParams(window.location.search);
+
+        // --- Campaign attribution -------------------------------------
+        // Copy UTM/click params off the URL into hidden fields so they
+        // travel with the lead into the notification email.
+        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid']
+            .forEach(function(key) {
+                var field = document.getElementById(key);
+                if (field) field.value = params.get(key) || '';
+            });
+
+        document.getElementById('referrer').value = document.referrer || 'direct';
+        document.getElementById('landing_url').value = window.location.href;
+
+        // --- "Other" follow-up fields ---------------------------------
+        // A select tagged with data-reveals shows its paired text field
+        // when "Other" is picked. The field only becomes required while
+        // it is visible — a hidden required input would block submission
+        // with an error the user cannot see or focus.
+        form.querySelectorAll('select[data-reveals]').forEach(function(select) {
+            var group = document.getElementById(select.dataset.reveals);
+            if (!group) return;
+            var input = group.querySelector('input');
+
+            select.addEventListener('change', function() {
+                var isOther = select.value === 'Other';
+                group.classList.toggle('show', isOther);
+                input.required = isOther;
+                if (isOther) {
+                    input.focus();
+                } else {
+                    input.value = '';
+                }
+            });
+        });
+
+        // --- Submit ---------------------------------------------------
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Name the email after the company so the inbox stays scannable
+            var company = document.getElementById('company').value.trim();
+            var campaign = params.get('utm_campaign');
+            var subject = 'AI Voice Cost Calculator — ' + (company || 'new request');
+            if (campaign) subject += ' [' + campaign + ']';
+            document.getElementById('formSubject').value = subject;
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(function(response) {
+                if (response.ok) {
+                    form.style.display = 'none';
+                    successPanel.classList.add('show');
+                    successPanel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Lead');
+                    }
+                } else {
+                    showError();
+                }
+            }).catch(showError);
+
+            function showError() {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send me my cost breakdown';
+                alert('There was an error sending your request. Please try again, or email ale@spicyautomations.com directly.');
+            }
+        });
+    })();
+    </script>
+
+</body>
+</html>
