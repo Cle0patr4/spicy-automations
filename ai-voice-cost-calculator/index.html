@@ -63,17 +63,41 @@
 </head>
 <body class="landing-body">
 
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar-container"></nav>
+    <script src="/assets/js/navbar.js"></script>
+
+    <!-- Mobile Menu Script - Direct -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            const btn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('navLinks');
+            if (!btn || !nav) return;
+
+            const toggleMenu = function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (window.innerWidth <= 768) {
+                    const open = nav.classList.toggle('active');
+                    btn.classList.toggle('active', open);
+                }
+            };
+
+            btn.addEventListener('click', toggleMenu);
+
+            nav.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    nav.classList.remove('active');
+                    btn.classList.remove('active');
+                });
+            });
+        }, 300);
+    });
+    </script>
+
     <main class="landing">
         <div class="landing-inner">
-
-            <!-- Logo only — no nav menu, this is a conversion page. The logo
-                 links home so visitors arriving from the site navbar are not
-                 stuck on a dead end. -->
-            <header class="landing-header">
-                <a href="/" aria-label="Spicy Automations home">
-                    <img src="../assets/images/logo_spicy_a.png" alt="Spicy Automations" class="landing-logo">
-                </a>
-            </header>
 
             <div class="landing-intro">
                 <div class="tag-wrapper">

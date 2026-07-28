@@ -1,30 +1,25 @@
-// Load navbar component
-async function loadNavbar() {
+// Inject a shared component into its container.
+// Paths are root-relative: pages live at varying depths, so a relative
+// path would 404 from anywhere but the site root.
+async function loadComponent(name, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return; // page doesn't use this component
+
     try {
-        const response = await fetch('components/navbar.html');
-        const html = await response.text();
-        const navbarContainer = document.getElementById('navbar-container');
-        if (navbarContainer) {
-            navbarContainer.innerHTML = html;
+        const response = await fetch(`/components/${name}.html`);
+        // Without this check a 404 page would be injected as the component,
+        // rendering the server's error HTML inside the navbar.
+        if (!response.ok) {
+            throw new Error(`${response.status} fetching ${name}.html`);
         }
+        container.innerHTML = await response.text();
     } catch (error) {
-        console.error('Error loading navbar:', error);
+        console.error(`Error loading ${name}:`, error);
     }
 }
 
-// Load footer component
-async function loadFooter() {
-    try {
-        const response = await fetch('components/footer.html');
-        const html = await response.text();
-        const footerContainer = document.getElementById('footer-container');
-        if (footerContainer) {
-            footerContainer.innerHTML = html;
-        }
-    } catch (error) {
-        console.error('Error loading footer:', error);
-    }
-}
+const loadNavbar = () => loadComponent('navbar', 'navbar-container');
+const loadFooter = () => loadComponent('footer', 'footer-container');
 
 // Load components when DOM is ready
 async function loadComponents() {

@@ -11,8 +11,10 @@
     min-height: 100vh;
 }
 
+/* Top padding clears the navbar, which is absolutely positioned
+   (~100px tall: 60px logo + 20px padding top and bottom). */
 .landing {
-    padding: 32px 0 64px;
+    padding: 140px 0 64px;
 }
 
 .landing-inner {
@@ -20,19 +22,6 @@
     max-width: 620px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-/* Logo — deliberately not a link. This is a conversion page,
-   so there is no navigation away from the form. */
-.landing-header {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.landing-logo {
-    width: 120px;
-    height: auto;
 }
 
 /* ===================================
@@ -269,15 +258,7 @@
    =================================== */
 @media (min-width: 768px) {
     .landing {
-        padding: 56px 0 90px;
-    }
-
-    .landing-logo {
-        width: 140px;
-    }
-
-    .landing-header {
-        margin-bottom: 56px;
+        padding: 170px 0 90px;
     }
 
     .landing-intro {

@@ -55,10 +55,14 @@ Then open http://localhost:8080.
 
 `components/navbar.html` and `components/footer.html` are plain HTML fragments
 pulled in at runtime by `assets/js/navbar.js`, which injects them into
-`#navbar-container` and `#footer-container`. Any page wanting the standard chrome
-needs those two elements plus a `<script src="assets/js/navbar.js">`.
+`#navbar-container` and `#footer-container`. A page opts in by including the
+container element plus `<script src="/assets/js/navbar.js">`; a page without the
+container simply skips that component.
 
-The calculator landing deliberately skips both — see below.
+**Every path in these fragments — and the fetch inside `navbar.js` — must stay
+root-relative.** Pages live at different depths (`/contact.html` but also
+`/ai-voice-cost-calculator/`), and a relative path silently resolves against the
+current directory, 404ing the logo and every link one level down.
 
 ---
 
@@ -113,10 +117,8 @@ clean URL on Netlify with no redirect rules).
 
 **It is intentionally different from the rest of the site:**
 
-- No navbar and no footer — a conversion page should not offer exit routes. The
-  logo is the one exception: it links home, because the page is also reachable
-  from the main site navbar ("Voice Calculator") and organic visitors should not
-  hit a dead end.
+- Uses the standard navbar (same component as the rest of the site) but no
+  footer, keeping the page short and the form close to the fold.
 - Mobile-first CSS. Most traffic arrives on a phone from Meta.
 - Inputs are `16px` with a `52px` min-height: below 16px, iOS Safari zooms the
   viewport when a field is focused, which wrecks the mobile experience.

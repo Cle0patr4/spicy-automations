@@ -1584,6 +1584,14 @@ a {
         display: flex;
     }
 
+    /* Comfortable tap targets in the drawer. Some pages also set this
+       inline from their menu script; keeping it here means the size does
+       not depend on which script runs. */
+    .nav-links a {
+        display: block;
+        padding: 12px 5px;
+    }
+
     .mobile-menu-btn {
         display: flex;
         z-index: 1001;
