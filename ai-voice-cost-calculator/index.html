@@ -66,9 +66,13 @@
     <main class="landing">
         <div class="landing-inner">
 
-            <!-- Logo only — no navigation, this is a conversion page -->
+            <!-- Logo only — no nav menu, this is a conversion page. The logo
+                 links home so visitors arriving from the site navbar are not
+                 stuck on a dead end. -->
             <header class="landing-header">
-                <img src="../assets/images/logo_spicy_a.png" alt="Spicy Automations" class="landing-logo">
+                <a href="/" aria-label="Spicy Automations home">
+                    <img src="../assets/images/logo_spicy_a.png" alt="Spicy Automations" class="landing-logo">
+                </a>
             </header>
 
             <div class="landing-intro">

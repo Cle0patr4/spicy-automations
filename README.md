@@ -113,8 +113,10 @@ clean URL on Netlify with no redirect rules).
 
 **It is intentionally different from the rest of the site:**
 
-- No navbar, no footer, no nav links. The logo is a plain `<img>`, not a link —
-  a conversion page should have no exit routes.
+- No navbar and no footer — a conversion page should not offer exit routes. The
+  logo is the one exception: it links home, because the page is also reachable
+  from the main site navbar ("Voice Calculator") and organic visitors should not
+  hit a dead end.
 - Mobile-first CSS. Most traffic arrives on a phone from Meta.
 - Inputs are `16px` with a `52px` min-height: below 16px, iOS Safari zooms the
   viewport when a field is focused, which wrecks the mobile experience.

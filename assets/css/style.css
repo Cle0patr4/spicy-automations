@@ -1572,6 +1572,9 @@ a {
         right: 0;
         background: var(--color-dark);
         flex-direction: column;
+        /* The desktop 40px gap is sized for a horizontal row; stacked in
+           the mobile drawer it leaves the links floating far apart. */
+        gap: 8px;
         padding: 20px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         z-index: 999;
